@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* HEADER STYLING */
+
+header {
+  /* border: 1px solid red;  */
+  /* border-bottom: 1px solid black; */
+  background-color: #fff;
+}
+
+.tophead {
+  background-color: #2a6633;
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10rem;
+}
+
+.tophead li {
+  /* border: 1px solid white; */
+  /* margin: 0.5rem; */
+  padding: 0.5rem 0;
+  margin: 0 2rem;
+}
+
+.tophead a {
+  /* border: 1px solid black; */
+  color: #fff;
+  padding: 0.5rem;
+  font-family: "Dosis", sans-serif;
+  font-family: "roboto";
+  font-size: 14px;
+}
+
+.tophead img {
+  background-color: #fff;
+  width: 7rem;
+  padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+  position: relative;
+  top: -0.5rem;
+}
+
+.bottomhead {
+  /* background-color: pink  ; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: #fff;
+  padding: 0 7rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.logo {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  height: 8rem;
+  width: 10rem;
+}
+.navbar {
+  /* border: 1px solid blue; */
+  margin-right: 7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar li > a,
+.dropdown > p {
+  font-size: 18px;
+  position: relative;
+  top: 1rem;
+  font-weight: bold;
+  color: rgb(90, 90, 255);
+  padding: 1rem;
+}
+
+.navbar li > a:hover,
+.dropdown > p:hover {
+  cursor: pointer;
+}
+
+/* DROPDOWN STYLING */
+
+.dropdown_items {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+  position: absolute;
+  min-width: max-content;
+  /* padding: 1rem 2rem; */
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  top: 6.5rem;
+  border-top: 4px solid rgb(218, 62, 140);
+  z-index: 2;
+}
+
+.dropdown_items a {
+  padding: 0.7rem 2rem;
+  color: black;
+}
+
+.dropdown_items a:last-child {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.dropdown:hover .dropdown_items {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown_items a:hover {
+  color: #fff;
+  background-color: rgb(218, 62, 140);
+}
+
+/* FLOATING ADMISSION ICON */
+
+.floating-admission-icon{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden;
+    position: fixed;
+    top: 47%;
+    right: -87px;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+
+}
+.floating-admission-icon p{
+    padding: 0.6rem 2rem;
+    background-color: red;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+/* SECTION-1 STYLING */
+
+.section_1{
+    width: 100%;
+    height: 80%;
+    background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2019/02/IMG_4228-2000.jpg") no-repeat center center/cover;
+    animation: section_1_slideshow 30s infinite;
+}
+
+@keyframes section_1_slideshow {
+    25%{
+        background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2019/02/IMG_4350-2000.jpg") no-repeat center center/cover;
+    }
+    50%{
+    background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2019/02/IMG_4797-2000.jpg") no-repeat center center/cover;
+    }
+    75%{
+    background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2019/02/IMG_4715-2000.jpg") no-repeat center center/cover;
+    }
+    100%{
+        background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2019/02/IMG_4135-2000.jpg") no-repeat center center/cover;
+    }
+}
+
+/* SECTION-2 STYLING */
+
+.section_2 {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 12.5rem;
+}
+
+.section_2_heading {
+  /* border: 1px solid red; */
+  width: 100%;
+  margin-bottom: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_2_heading p {
+  font-size: 4rem;
+  color: blue;
+  font-family: "Great Vibes", cursive;
+  /* font-weight: bold; */
+}
+
+.section_2_features {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.section_2_features div {
+  /* border: 1px solid black; */
+  /* height: 12rem; */
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  padding: 1rem 19px;
+  padding-top: 0;
+  /* margin: 0 1rem; */
+}
+
+.section_2_features div:first-child {
+  background-color: rgb(69, 193, 69);
+}
+
+.section_2_features div:nth-child(2) {
+  background-color: rgb(83, 188, 230);
+}
+
+.section_2_features div:nth-child(3) {
+  background-color: rgb(56, 166, 56);
+}
+
+.section_2_features div:last-child {
+  background-color: darkgreen;
+}
+
+.section_2_features div > img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  position: relative;
+  top: -4rem;
+  z-index: 0;
+}
+
+.section_2_features div > p {
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.5;
+}
+
+.section_2_features_div_head {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -2.5rem;
+}
+
+.section_2_features div p:last-child {
+  top: -1.5rem;
+}
+
+/* SECTION-4 STYLING */
+
+#section_4 {
+  display: flex;
+  background-color: orange;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 12rem;
+}
+
+#section_4 .left_half {
+  /* border: 1px solid black; */
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+#section_4 .left_half div > p {
+  color: white;
+  text-align: justify;
+  font-size: 17px;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+}
+
+#section_4 .section_4_head {
+  font-size: 4rem;
+  color: blue;
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 2rem;
+}
+
+#section_4 .right_half img {
+  border-radius: 30px;
+}
+
+/* SECTION-5 STYLING */
+
+#section_5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 24rem));
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+#section_5 > div {
+  /* border: 1px solid black; */
+  height: 15.5rem;
+  margin: 0.7rem 1rem;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+#section_5 > div:first-child {
+  background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2018/10/time-table.jpg")
+    no-repeat center center/cover;
+}
+#section_5 > div:nth-child(2) {
+  background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2018/10/academic-calendar.jpg")
+    no-repeat center center/cover;
+}
+#section_5 > div:nth-child(3) {
+  background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2018/10/extra-350x250.jpg")
+    no-repeat center center/cover;
+}
+#section_5 > div:nth-child(4) {
+  background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2019/10/dpskidszone-bhopal.jpg")
+    no-repeat center center/cover;
+}
+#section_5 > div:nth-child(5) {
+  background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2022/10/fee-structure-23-24.jpg")
+    no-repeat center center/cover;
+}
+#section_5 > div:last-child {
+  background: url("https://dpskidszone.org/bhopal/wp-content/uploads/2018/10/bus-service-small-350x250.jpg")
+    no-repeat center center/cover;
+}
+
+#section_5 > div > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: rgba(69, 69, 183, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  margin-top: 11.7rem;
+}
+
+#section_5 > div:hover > div {
+  animation: section_5 0.3s forwards;
+}
+
+@keyframes section_5 {
+  100% {
+    margin-top: 0;
+    padding: 3rem 2rem;
+  }
+}
+
+#section_5 > div > div p {
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 1;
+}
+
+#section_5 > div > div a {
+  color: yellow;
+  line-height: 4;
+  width: fit-content;
+}
+
+#section_5 > div > div a:hover {
+  color: #fff;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  background-color: #2a6633;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 14rem 2rem 14rem;
+}
+
+footer > div:first-child {
+  /* border: 1px solid red; */
+  display: flex;
+}
+
+footer div > div p,
+footer div > div a {
+  color: #fff;
+  font-size: 15px;
+  line-height: 2;
+  padding-left: 2rem;
+}
+
+footer > div > div {
+  /* border: 1px solid white; */
+  margin: 0 2rem;
+}
+
+.footer_heading {
+  /* border: 1px solid black; */
+  color: yellow;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.footer_ele1 {
+  width: 25rem;
+}
+.footer_ele1 a {
+  padding-left: 0;
+}
+.footer_ele1 a:last-child:hover {
+  text-decoration: underline;
+}
+
+.footer_ele2 {
+  width: 15rem;
+}
+.footer_ele2 a:hover {
+  text-decoration: underline;
+}
+
+.footer_ele3 {
+  width: 15rem;
+}
+.footer_ele3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -3rem;
+}
+.footer_ele3 img {
+  width: 2rem;
+  height: 2rem;
+  filter: invert(100);
+}
+
+footer > div:last-child {
+  /* border: 1px solid blue; */
+  margin-top: 3rem;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > div:last-child p {
+  color: #fff;
+}

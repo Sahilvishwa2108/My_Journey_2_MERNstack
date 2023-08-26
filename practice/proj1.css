@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    background-image: url("https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2574&q=80");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+.button1 span{
+    font-size: 40px;
+    font-weight: 700;
+    color: aliceblue;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    transition: all 0.5s ease;
+}
+.button1 span:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.sidebar{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255,0.15);
+    border-top-right-radius: 2px;
+    box-shadow: 0 0 6px rgba(255, 255, 255,0.8);
+    transition: all 0.3s linear;
+}
+.logo{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 2px 3px rgba(255, 255, 255,0.5);
+}
+.sidebar .logo a{
+    position: absolute;
+    left: 60px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 1s ease;
+}
+.sidebar .logo a:hover{
+    transform: scale(1.1);
+}
+.sidebar .menu{
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    line-height: 30px;
+}
+.sidebar .button2{
+    color: rgba(0, 255, 255,0.8);
+    font-size: 25px;
+    position: absolute;
+    left: 270px;
+    top: 23px;
+}
+.sidebar .button2 span{
+    transition: color 0.3s ease;
+}
+.sidebar .button2 span:hover{
+    font-size: 30px;
+    color: rgb(235, 60, 60);
+    position: absolute;
+    left: -3px;
+    top: -2px;
+    cursor: pointer;
+}
+.sidebar .menu li{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+}
+.sidebar .menu li a,span{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar .menu li span{
+    font-size: 40px;
+    position: relative;
+    top: 10px;
+    padding-right: 8px;
+}
+#check{
+    display: none;
+}
+.sidebar .menu li:hover{
+    box-shadow: 0 0 8px rgba(255, 255, 255,0.6);
+    border-radius: 8px;
+}
+#check:checked ~.sidebar{
+    left: 0;
+}
+#check:checked ~.button1 span{
+    display: none;
+}

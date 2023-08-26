@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Me</title>
+    <!-- adding favicon -->
+    <link rel="shortcut icon"
+        href="https://e7.pngegg.com/pngimages/870/748/png-clipart-call-center-agent-logo-virtual-assistant-computer-icons-personal-assistant-business-management-support-blue-company.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="linkedform.css">
+</head>
+
+<body>
+    <header>
+
+        <h1 id="formHead">Fill this Form to Directly Chat with Me</h1>
+
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <li><a href="#C1">Basic Details</a></li>
+                <li><a href="#C2">Register</a></li>
+                <li><a href="#C3">Choose Slot</a></li>
+                <li><a href="#C4">FAQ<sub>s</sub></a></li>
+            </ul>
+        </aside>
+        <article>
+            <form action="https://wa.me/7440207015">
+
+                <div>
+                    <fieldset>
+                        <legend>
+                            <h2 id="C1">Basic Details</h2>
+                        </legend>
+                        <select name="title" id="title">
+                            <option selected>Select Title</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Mrs.">Mrs.</option>
+                            <option value="Ma.">Ma.</option>
+                        </select>
+                        <br>
+                        <br>
+                        <div>
+                            <label for="Fname">First Name: </label>
+                            <input type="text" name="Fname" id="Fname" placeholder="Enter Your First Name Here">
+                            <br>
+                            <br>
+                            <label for="Lname">Last Name: </label>
+                            <input type="text" name="Lname" id="Lname" placeholder="Enter Your Last Name Here">
+                        </div>
+                        <br>
+                        <label for="sex">Gender:</label>
+                        <select name="Gender" id="sex">
+                            <option>Select Gender</option>
+                            <option value="M">Male</option>
+                            <option value="F">Female</option>
+                            <option value="P">Prefer not to say</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="work">Profession: </label>
+                        <select name="work" id="work">
+                            <option>select</option>
+                            <option value="Student">Student</option>
+                            <option value="Professional">Working Professional</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="age">Age:</label>
+                        <input type="number" name="age" id="age" min="15" max="60" step="1">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>
+                            <h2 id="C2">Register with Us</h2>
+                        </legend>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email Here">
+                        <br>
+                        <br>
+                        <label for="mobile">Mobile: </label>
+                        <select name="Country code" id="CCode">
+                            <option>select</option>
+                            <option value="+91">+91</option>
+                        </select>
+                        <input type="password" name="mobile" id="mobile" placeholder="Enter Your Mobile Number">
+                        <br>
+                        <br>
+                        <label>I am a</label>
+                        <input type="radio" name="residence" id="Indian">
+                        <label for="Indian">Indian </label>
+                        <input type="radio" name="residence" id="Foriegner">
+                        <label for="Foriegner">Foriegner </label>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>
+                            <h2 id="C3">Choose a Preferred Slot</h2>
+                        </legend>
+                        <label for="time">Select time</label>
+                        <input type="time" name="time" id="time">
+                        <br>
+                        <br>
+                        <label for="date">Select Date: </label>
+                        <input type="date" name="date" id="date">
+                        <br>
+                        <br>
+                        <label for="duration">Choose duration in Minutes: </label>
+                        <input type="range" name="duration" id="duration" min="1" max="5" step="1">
+                        <br>
+                        <br>
+                        <label for="message">What Do You Want to Talk about:</label><br>
+                        <textarea name="message" id="message" cols="30" rows="3"
+                            placeholder="Enter minimum three meaningful words"></textarea>
+                    </fieldset>
+                </div>
+                <br>
+                <br>
+                <div id="buttons">
+                    <input type="reset" value="Clear form" id="clearForm">
+                    <button id="chatNow">Chat Now</button>
+                </div>
+
+            </form>
+        </article>
+        
+    </main>
+
+    <footer>
+        <h2 id="C4">Frequently Asked Questions</h2>
+        <details>
+            <summary><b>Who You are??</b></summary>
+            <p>I am a B.Tech student in Computer Science and Engineering at LNCT (main) Bhopal, currently pursuing my
+                degree and seeking opportunities to apply my technical skills in the industry. My coding journey began
+                in 11th grade when I took Computer Science as an optional subject, where I gained a solid foundation in
+                Python and MySQL. Since then, I have expanded my programming skills by learning C++ then I switched to
+                Java. I am constantly seeking new challenges and opportunities to grow as a software developer.</p>
+        </details>
+        <details>
+            <summary><b>Why Should I fill this form??</b></summary>
+            <p>So that we will we able to know each other properly before connecting via chat</p>
+        </details>
+        <details>
+            <summary><b>Which topics can I discuss with You?</b></summary>
+            <p>You can discuss on any topic whether it is related to your acadmics, career guidance or any Other</p>
+        </details>
+        <details>
+            <summary><b>Why should I trust You?</b></summary>
+            <p>Your Privacy is My top most priority so your details and chat is secured using <i>End to End
+                    Encryption</i>. But I can't trust than You can leave the form empty and Directly submit the form</p>
+        </details>
+        <br>
+        <center>
+            <audio src="Harry Potter Theme.mp3" controls></audio>
+        </center>
+        <br>
+        <center>
+            <iframe src="https://www.youtube.com/embed/-ipquUy4kRc" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/eRTeF4MPnCg" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/-ipquUy4kRc" frameborder="0"></iframe>
+            <iframe src="https://www.youtube.com/embed/eRTeF4MPnCg" frameborder="0"></iframe>
+        </center>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+#container{
+    border: 2px solid black;
+    border-radius: 2px;
+    display: inline-block;
+}
+.internal{
+    display: inline-block;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 1px;
+}
+img{
+    width: 300px;
+    height: 200px;
+}

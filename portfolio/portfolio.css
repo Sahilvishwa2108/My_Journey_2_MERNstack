@@ -1,0 +1,31 @@
+h1{
+    color: red;
+    text-decoration:dotted black underline;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    
+}
+p{
+    color: rgb(81, 81, 237);
+} 
+#contacts{
+    text-align: center;
+}
+legend#contacts{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+td#intro{
+    line-height: 0.4;
+    
+    font-family: Arial;
+    text-transform: uppercase;
+}
+ul.skillhobby{
+    line-height: 2;
+}
+body{
+    background-color: antiquewhite;
+}

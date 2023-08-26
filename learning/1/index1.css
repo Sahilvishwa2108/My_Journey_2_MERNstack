@@ -1,0 +1,153 @@
+                                                        /* CSS Selectors */
+/* Universal Selector */
+*{
+    font-family: 'Courier New';
+}
+
+
+/* element selector(slecting multiple elements at a time) */
+h1,h3{
+    color: #b92b27;
+}
+
+
+/* id selector */
+#login{
+    background-color: rgb(161, 248, 246);
+}
+#signup{
+    background-color: #b92b27;
+    color: white;
+}
+
+
+/* class selector */
+.upvote{
+    background-color: green;
+}
+
+
+/* descendent selector */
+.post a{
+    background-color: yellow;
+}
+nav ul li{
+    color: pink;
+}
+
+
+/* sibling selector */
+p+h3{
+    text-decoration: dashed underline;
+}
+.upvote+button{
+    background-color: blue;
+    color: white;
+}
+
+
+/* child combinator */
+div>input{
+    background-color: darksalmon;
+}
+
+
+/* attribute selector */
+input[type="text"]{
+    color: greenyellow;
+}
+input[type="password"]{
+    color: red;
+}
+input[type]{
+    background-color: ghostwhite;
+}
+
+
+
+
+
+
+                                                    /* Pseudo Class */
+/* Hover pseudo class */
+button:hover{
+    background-color: black;
+    color: white;
+}
+h3:hover{
+    text-decoration: none;
+}
+
+
+/* active pseudo class */
+button:active{
+    background-color: hotpink;
+}
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+
+/* checked pseudo class */
+input[type="radio"]:checked+label{
+    color: red;
+    font-weight: bold;
+}
+
+
+/* nth-of-type pseudo class */
+div:nth-of-type(2n){
+    background-color: blanchedalmond;
+}
+
+
+
+                                                    /* Pseudo Element */
+/* first letter */
+h1::first-letter{
+    color: black;
+}
+
+
+/*first-line */
+p::first-line{
+    color: purple;
+}
+
+
+/* selection  */
+p::selection{
+    background-color: lightpink;
+}
+
+
+
+                                                    /* Cascading Property Of CSS */
+h3{
+    background-color: yellow;
+}
+h3{
+    background-color: lightblue;
+}
+
+                                                    /* Specificity of Selectors */
+/*
+Rule-1:
+Priority Order-
+id> class, attribute,pseudo class > element,pseudo element
+
+Rule-3
+if specificity is same then go throough cascading property
+
+Rule-2
+more selectors> less selectors */
+
+/* Note: Inline specificity
+Inline styling > id> class, attribute,pseudo class > element,pseudo element */
+
+                                                   /* important */
+h3{
+    background-color: antiquewhite !important; 
+    /* highest specificity ever */
+}

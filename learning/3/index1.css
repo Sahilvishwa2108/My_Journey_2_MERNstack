@@ -1,0 +1,95 @@
+#c2:hover{
+    background-color: rgb(255, 0, 225);
+    /* Value of alpha and opacity */
+    color: rgba(0, 0, 255, 0.956);
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-left: 100px;
+    padding: 30px;
+
+}
+div{
+    width: 300px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+div:nth-of-type(2n){
+    background-color: aquamarine;
+}
+#c2{
+    text-align: center;
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+       
+                                                /* Transition Properties  */
+    /* transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+    transition-timing-function: ease;
+    transition-timing-function: steps;
+    transition-timing-function: cubic; */
+
+
+
+
+    /* transition shorthand
+            transition: propertyName | duration | timingFunction | delay */
+
+            transition: margin-left 5s ease-in-out 0.5s;
+}
+
+                                        /* CSS Transform property:-
+                                                    transform: skew();
+                                                    transform: translate();
+                                                    transform: rotate();
+                                                    transform: scale(); */
+#c1:hover{
+    transform: rotate(45deg);
+    transform: scale(2);
+    transform: scale(2,1.5);
+    transform: translate(100px,100px) skew(30deg);   
+}
+
+                                        /* box shadow prooperty
+shadow shorthand:-
+box-shadow:x-offset | y-offset | blur-radius | color; 
+*/
+#c2{
+    box-shadow: 2px 2px 10px black;
+}
+
+                                        /* background image property:-
+                                                        background-image:url();
+                                                        background-size:contain/cover/auto;
+                                                                contain-
+                                                                    no crop
+                                                                    no scale 
+                                                                    only repeat
+                                                                cover-
+                                                                    only crop 
+                                                                    no scale
+                                                                auto-
+                                                                    only stretch */
+
+
+
+
+                                        /* position property:-
+                                                        static
+                                                        relative
+                                                         */
+#static{
+    background-color: blueviolet;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+#relative{
+    background-color: rgb(43, 226, 214);
+    position: relative;
+    top: 100px;
+    left: 100px;
+}

@@ -1,0 +1,37 @@
+body{
+    background-color:rgb(255, 0 ,0,0.3);
+}
+button#chatNow{
+    color: rgb(0, 0, 0);
+    background-color: rgb(22, 199, 22);
+    font-weight: bolder;
+}
+input#clearForm{
+    color: #000;
+    background-color: rgb(255, 0, 0);
+    font-weight: bolder;
+}
+#buttons{
+    text-align: center;
+}
+#C4{
+    text-align: center;
+    text-decoration: dashed underline black;
+}
+#formHead{
+    text-align: center;
+    color: rgb(226, 43, 131);
+    font-weight:bolder;
+}
+a{
+    text-decoration: none;
+}
+details p{
+    color: #0000ff;
+}
+summary{
+    color: #f0f;
+}
+details{
+    line-height: 2;
+}

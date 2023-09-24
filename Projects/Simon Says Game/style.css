@@ -1,0 +1,81 @@
+body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.line-one, .line-two {
+    display: flex;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #333;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.purple {
+    background-color: #819ff0;
+}
+
+
+.gameflash {
+    background-color: white !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* 
+.userflash {
+    background-color: green !important;
+    transition: background-color 0.2s ease-in-out;
+} */

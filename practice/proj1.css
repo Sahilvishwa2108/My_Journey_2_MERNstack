@@ -7,7 +7,7 @@ body{
     background-image: url("proj1bg.png");
     background-size: inherit;
 }
-.container-fluid{
+.side-menu{
     /* background-image: url("proj1bg.png");
     background-size: inherit; */
     height: 95vh;
